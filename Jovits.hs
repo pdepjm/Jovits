@@ -11,7 +11,7 @@ data Hobbit = UnHobbit{
 	deLaComarca :: Bool,
 	anillo:: UnAnillo} deriving Show
 
-anilloUnico = UnAnillo 12"Un Anillo para gobernarlos a todos. Un Anillo para encontrarlos, un Anillo para atraerlos a todos y atarlos en las tinieblas." 3
+anilloUnico = UnAnillo 12 "Un Anillo para gobernarlos a todos. Un Anillo para encontrarlos, un Anillo para atraerlos a todos y atarlos en las tinieblas." 3
 	
 frodo = UnHobbit{
 	nombre = "Frodo",
@@ -28,8 +28,7 @@ merienda = segundoDesayuno 2.desayuno
 anilloUtn = UnAnillo 50  "Un Anillo para aprobar todas las materias. Un Anillo para recibirse, un Anillo para espantar a los vende humo y enviarlos a las tinieblas." 4
 
 
-cambioUnAnillo (UnHobbit nombre estatura salud fuerza deLaComarca anillo) nuevoAnillo= UnHobbit nombre estatura salud fuerza deLaComarca (nuevoAnillo{cantidadDeDias= 0})
-
+cambiarAnillo hobbit nuevoAnillo= hobbit{anillo=nuevoAnillo{cantidadDeDias= 0}}
 
 estaHambriento (UnHobbit nombre estatura salud fuerza esDeLaComarca (UnAnillo descripcion peso dias)) = salud > 50 && fuerza > 10 || dias > 30
 
