@@ -78,7 +78,7 @@ fuerzaConseguida cantidad divisor = (* cantidad).(flip div divisor).length
 
 manianaDeViaje = almuerzo "liebre" 3 . merienda . segundoDesayuno 1 . desayuno
 
--- Ejercicios hechos en clase de orden superior
+-- Ejercicios hechos en clase de orden superior para el curso de Lucas K2104
 
 -- 1)
 
